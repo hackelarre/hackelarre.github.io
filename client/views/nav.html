@@ -1,0 +1,66 @@
+<template name='nav'>
+
+  <nav class="gray" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="/" class="brand-logo">Hackelarre.cc</a>
+      <ul class="right hide-on-med-and-down">
+        <li class="active"><a href="/">&nbsp; Hasiera</a></li>
+        <li><a href="/blog">&nbsp; Bloga</a></li>
+        <li><a href="/lab">&nbsp; Dokumentazioa</a></li>
+        <li><a href="/lab">&nbsp; Laborategia</a></li>
+        <li><a href="/admin/blog">&nbsp; Hobespenak</a></li>
+          {{> loginButtons}}
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li class="active"><a href="/">&nbsp; Hasiera</a></li>
+        <li><a href="/blog">&nbsp; Bloga</a></li>
+        <li><a href="/lab">&nbsp; Dokumentazioa</a></li>
+        <li><a href="/lab">&nbsp; Laborategia</a></li>
+        <li><a href="/admin/blog">&nbsp; Hobespenak</a></li>
+          {{> loginButtons}}
+      </ul>
+
+      <a href="/" data-activates="nav-mobile" class="button-collapse"><i
+        class="material-icons">menu</i></a>
+ <div class="legal">
+<p class="copyright">Google ©</p>
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a>
+&
+<a href="http://www.google.com/intl/en/policies/terms/">Terms</a>
+</div>   </div>
+  </nav>
+
+
+</template>
+
+<!--
+<template name='nav'>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="brand" href="{{ pathFor 'home' }}">hackelarre.cc</a>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li class="active"><a href="/">&nbsp; Hasiera</a></li>
+          <li><a href="/blog">&nbsp; Bloga</a></li>
+          <li><a href="/lab">&nbsp; Dokumentazioa</a></li>
+          <li><a href="/lab">&nbsp; Laborategia</a></li>
+          <li><a href="/admin/blog">&nbsp; Hobespenak</a></li>
+        </ul>
+        <ul class="nav">
+          {{> loginButtons}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+</template>
+-->

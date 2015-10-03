@@ -1,0 +1,35 @@
+<!--
+<template name="layout">
+
+  
+  {{> nav }}
+  <div class="container">
+    {{> yield }}
+  </div>
+
+</template>
+<body>
+    {{> layout}}
+</body>
+-->
+
+<template name="layout">
+    {{> nav }}
+    <div class="off-canvas-container {{#if isMainMenuActive}}active{{/if}}">
+        <main>
+                {{> yield}}
+        </main>
+        <!--{{> header}}
+          {{> jumbotron}}
+        <main>
+            {{#unless isPrettyDiffDataLoaded}}
+                {{> promo}}
+            {{else}}
+                {{> diffContent}}
+            {{/unless}}
+        </main>
+        {{> footer}}-->
+    </div>
+</template>
+
+
